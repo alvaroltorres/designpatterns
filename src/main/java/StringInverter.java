@@ -6,4 +6,10 @@ public class StringInverter implements StringTransformer {
         rdrink.reverse();
         drink.setText(rdrink.toString());
     }
+
+    public void undo(StringDrink drink){
+        StringBuilder rdrink = new StringBuilder(drink.getText());
+        rdrink.reverse();
+        drink.setText(rdrink.toString());
+    }
 }
