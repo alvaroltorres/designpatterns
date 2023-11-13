@@ -27,4 +27,12 @@ public class CommandPatternTest {
         cc.execute(drink);
         assertEquals("AbCd", drink.getText());
     }
+
+    @Test
+    public void stringReplacer() {
+        StringDrink drink = new StringDrink("ABCDABCD");
+        StringReplacer sr = new StringReplacer('A', 'X');
+        sr.execute(drink);
+        assertEquals("XBCDXBCD", drink.getText());
+    }
 }
