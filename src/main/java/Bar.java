@@ -11,6 +11,7 @@ public abstract class Bar {
         this.observers = observers;
     }
 
+    /*
     public List<BarObserver> getObservers() {
         return observers;
     }
@@ -18,6 +19,7 @@ public abstract class Bar {
     public void setObservers(List<BarObserver> observers){
         this.observers = observers;
     }
+     */
 
     public void addObserver(BarObserver observer) {
         observers.add(observer);

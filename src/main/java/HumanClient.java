@@ -15,7 +15,6 @@ public class HumanClient implements Client{
     public void happyHourEnded(Bar bar) {
         if (bar instanceof StringBar)
             strategy.happyHourStarted((StringBar) bar);
-
     }
 
     @Override
