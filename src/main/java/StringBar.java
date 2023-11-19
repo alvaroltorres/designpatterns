@@ -1,5 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class StringBar extends Bar{
     private boolean active;
+
+    public StringBar() {
+        this(new ArrayList<>());
+    }
+
+    public StringBar(List<BarObserver> observers) {super(observers);}
     @Override
     public boolean isHappyHour() {
         if (active == true) return true;
@@ -14,5 +23,9 @@ public class StringBar extends Bar{
     @Override
     public void endHappyHour() {
         active = false;
+    }
+
+    public void order(StringDrink drink, StringRecipe recipe) {
+        recipe.mix(drink);
     }
 }

@@ -7,6 +7,10 @@ public abstract class Bar {
 
     public List<BarObserver> observers;
 
+    public Bar(List<BarObserver> observers) {
+        this.observers = observers;
+    }
+
     public List<BarObserver> getObservers() {
         return observers;
     }
