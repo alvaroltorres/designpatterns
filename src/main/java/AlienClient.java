@@ -13,12 +13,10 @@ public abstract class AlienClient implements Client{
         strategy.happyHourEnded((StringBar) bar);
     }
     @Override
-    public void wants(StringDrink drink, StringRecipe recipe,
-                      StringBar bar) {
+    public void wants(StringDrink drink, StringRecipe recipe, StringBar bar) {
         strategy.wants(drink, recipe, bar);
     }
-    protected abstract OrderingStrategy
-    createOrderingStrategy();
+    protected abstract OrderingStrategy createOrderingStrategy();
 
 
 }
