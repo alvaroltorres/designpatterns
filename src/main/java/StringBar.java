@@ -18,11 +18,13 @@ public class StringBar extends Bar{
     @Override
     public void startHappyHour() {
         active = true;
+        notifyObservers();
     }
 
     @Override
     public void endHappyHour() {
         active = false;
+        notifyObservers();
     }
 
     public void order(StringDrink drink, StringRecipe recipe) {
